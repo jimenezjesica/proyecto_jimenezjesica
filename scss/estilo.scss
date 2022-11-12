@@ -1,0 +1,409 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+
+body{
+    background-color: black;
+}
+
+header {
+    background-color: black;
+   height: 600px;
+
+}
+
+
+a {
+    font-size: 20px;
+    color: rgb(114, 109, 109);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-decoration: none;
+
+
+}
+
+main {
+    background-color: black;
+   
+}
+
+h2 {
+    color: rgb(114, 109, 109);
+    text-align: center;
+    
+}
+
+p {
+    color: rgb(114, 109, 109)
+}
+
+
+footer p{
+    text-align: center;
+    font-size:18px;
+    font-family: 'Dancing Script', cursive;
+
+}
+
+footer {
+    height: 50px;
+    background-color: rgb(5, 5, 5);
+
+}
+
+label {
+    color: rgb(114, 109, 109)
+}
+
+td {
+    color: rgb(114, 109, 109);
+    font-size: 20px;
+    text-align: center;
+    border-left:1px solid white;
+    border-right:1px solid white;
+}
+
+th {
+    font-size: 20px;
+    color: rgb(114, 109, 109);
+    text-align:center;
+    border-bottom:1px solid white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+tr {
+    color: bisque;
+    border: 2mm;
+    border-color: blue;
+}
+
+h3 {
+    color: rgb(114, 109, 109);
+    font-size: 25px;
+}
+
+ul{
+    display:flex;
+    background-color: rgb(7, 7, 7);
+    list-style-type: none;
+}
+
+
+
+
+li{ 
+    color: rgb(114, 109, 109);
+    text-align: center;
+}
+
+
+a:hover{
+    color:white;
+}
+
+table{
+    width: 80%;
+    height: 800px ;
+    margin-left:10%;
+    
+    padding:20px;
+}
+
+
+button{
+    background-color:yellow;
+    width: 80%;
+    height: 80%;
+    border-radius: 10px;
+    font-weight: 900;
+}
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.titulos{
+    font-size:30px;
+    font-family: 'Dancing Script', cursive;
+    color:rgb(119, 118, 112);
+    margin-top:80px;
+    margin-bottom:80px;
+}
+
+
+.section_discografia{
+    margin-top:100px;
+    width: 90%;
+    margin-left:100px;
+}
+
+
+.section_galeria{
+    display:grid;
+}
+
+
+.section_contacto{
+    height: 1100px;
+    width: 50%;
+    margin-top:200px;
+    margin-left:25%;
+    background-color: rgb(13, 12, 12);
+    background-image: url("../img/img_form.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.img_galeria{
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter:grayscale(100%);
+   
+}
+
+
+.img_galeria:hover{
+    filter:grayscale(0%)
+}
+
+#img_form{
+    width: 45%;
+    height: 80%;
+    display:inline-block;
+}
+
+
+form{ 
+    width: 100%;
+    height: 100%;
+    margin-left: 50px;
+    margin-bottom: 30%;
+   
+}
+
+
+label{
+    font-size:20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color:rgb(201, 190, 190);
+    margin-left:10px;   
+    font-size:20px;
+    
+}
+
+
+input{
+    width: 45%;
+    height: 30px;
+    margin-bottom:10px;
+    display:inline-block;
+    font-size:20px;
+}
+
+textarea{
+    margin-top:10px;
+    width: 91%;
+    font-size:20px;
+}
+
+.parrafo_form{
+    padding-top:5%;
+    padding-bottom: 5%;
+    color:silver;   
+    text-align: center;
+    font-size:25px;
+
+
+}
+
+#boton_form{
+    margin-left:30%;
+    margin-top:30px;
+    background-color:rgb(53, 53, 53);
+    border:0;
+  
+    width: 30%;
+    height: 30px;
+    border-radius: 10px;
+    font-weight: 900;
+    color:white;
+    font-size:20px;
+}
+
+
+.section_contacto h3{
+    font-size:40px;
+    text-align: center;
+    padding-top: 35%;
+    padding-bottom:10%;
+    color: white;
+    font-family: 'Dancing Script', cursive;
+    
+}
+
+
+#contenido_form{
+    background-color: rgba(23, 23, 23, 0.682);
+    width: 90%;
+    margin-left:5%;
+    height: 550px;
+}
+
+
+
+.grilla_home{
+
+    display:grid;
+
+}
+
+
+.seccion_home{
+    display:flex;
+}
+
+
+@media only screen and (max-width:600px){
+
+
+    header{
+        height: 300px;
+    }
+    
+    ul{
+        height: 200px;
+        background-color:rgb(27, 27, 27) ;
+        flex-direction: column;
+        justify-content:space-evenly;
+        align-items: center;
+        
+    }
+
+  
+    .grilla_home{
+        height: 1000px;
+        grid-template-columns: 90%;
+        grid-template-rows: 50% 40%;
+        grid-template-areas:"foto"
+                            "texto";
+
+        justify-content: center;
+        align-content: space-around;
+    }
+
+
+    .seccion_home{
+        flex-direction: column;
+        justify-content: space-evenly;
+        background-color: rgb(0, 0, 0);
+       
+    }
+
+
+    .seccion_home h2{
+        font-size: 50px;
+        text-decoration: underline;
+        
+
+    }
+
+ 
+    .seccion_home p{
+        font-size:20px;
+        text-align: center;
+        height: 60%;
+    }
+
+
+    .section_galeria{
+        height: 3000px;
+        grid-template-rows: 350px 350px 350px 350px 350px 350px;
+        grid-template-columns: 90%;
+        justify-content: center;
+        align-content: space-around;
+    }
+
+    
+}
+
+
+
+@media only screen and ( min-width:600px){
+
+
+    
+    header{
+        height: 400px;
+    }
+    
+    ul{
+        height: 100px;
+        background-color:rgb(27, 27, 27) ;
+        flex-direction: row;
+        justify-content:center;
+        align-items: center;
+        
+    }
+
+    li{
+        width: 10%;
+       
+    }
+  
+    .grilla_home{
+        height: 1500px;
+        grid-template-columns: 45% 45%;
+        grid-template-rows: 10% 60% 10%;
+        grid-template-areas:". ."
+                            "foto texto"
+                            ". .";
+
+        justify-content: space-evenly;
+        align-content: space-around;
+    }
+
+
+    .seccion_home{
+        flex-direction: column;
+        justify-content: space-evenly;
+        grid-area: texto;
+        background-color: black;
+    }
+
+
+    .seccion_home h2{
+        font-size: 60px;
+        text-decoration: underline;
+         
+
+    }
+
+ 
+    .seccion_home p{
+        font-size:30px;
+        text-align: center;
+        height: 60%;
+        
+    }
+
+
+    #img_home{
+        grid-area:foto;
+    }
+
+
+    .section_galeria{
+        height: 3000px;
+        grid-template-rows:  25% 25% 25% ;
+        grid-template-columns: 30% 30%;
+        justify-content: space-evenly; 
+        align-content: space-around;
+    }
+
+}
